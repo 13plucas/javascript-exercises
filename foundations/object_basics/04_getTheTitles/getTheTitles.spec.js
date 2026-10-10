@@ -9,10 +9,14 @@ describe('getTheTitles', () => {
       {
         title: 'Book2',
         author: 'Name2'
+      },
+      {
+        title: 'Dune',
+        author: 'Herbert'
       }
     ]
 
   test('gets titles', () => {
-    expect(getTheTitles(books)).toEqual(['Book','Book2']);
+    expect(getTheTitles(books)).toEqual(['Book','Book2','Dune']);
   });
 });
